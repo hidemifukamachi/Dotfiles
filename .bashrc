@@ -1,0 +1,6 @@
+alias g='cd $(ghq root)/$(ghq list | peco)'
+alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+alias ll='ls -alt'
+alias pets='pet search'
+alias hosts='sudo vim /etc/hosts'
+alias s='git pull; branch_name=$(git branch -r | peco | sed -e "s#[[:space:]]*origin/##"); git switch $branch_name'
